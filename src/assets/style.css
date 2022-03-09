@@ -1,0 +1,334 @@
+body{
+  font-family: bignoodletitling;
+}
+
+.text{
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  height: 22px;
+
+  color: #fff;
+  background-color: rgb(0,0,0);
+  padding-top: 2px;
+}
+
+.text img{
+  width: 20px;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 5px;
+
+}
+
+.text p{
+  text-align: center;
+}
+.text span::before{
+  content: "venez decouvrir nos produits";
+  animation: aaa 12s infinite;
+}
+@keyframes aaa{
+  0%{
+    content: "des meubles de derniere generation"
+  }
+  25%{
+    content: "des voitures de luxes "
+  }
+  50%{
+    content: "maisons et appartements "
+  }
+}
+.header{
+
+  height: 85px;
+}
+.slade{
+  margin-top: 1px;
+  height: 300px;
+}
+
+.header .carousel-inner .item{
+  height: 100vh;
+}
+
+.navbar-inverse{
+  height: 85px;
+  background-color: #fff;
+  border-color: transparent;
+}
+.navbar-inverse .navbar-brand{
+  color: #000000;
+  font-size: 40px;
+  padding: 40px 15px;
+  font-weight: 900;
+}
+.nav.navbar-nav.navbar-left{
+  margin: 29px 0;
+}
+.nav.navbar-nav.navbar-right{
+  margin: 29px 0;
+}
+.navbar-inverse .navbar-nav > li > a{
+  color: #000000;
+  text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+ background-color: rgba(92,95,236,0.7);
+  border-radius: 15px;
+  height: 25px;
+  padding-top: 2px;
+}
+
+
+.mandiv{
+width: 100%;
+  height: 270px;
+
+  position: absolute;
+  background-image: url(image/slide1.jpg);
+  background-size: 100% 100%;
+  border: solid transparent;
+
+  animation: slider 40s infinite linear;
+}
+
+@keyframes slider{
+  0%{background-image: url(image/slide1.jpg);}
+  35%{background-image: url(image/slide2.jpg);}
+  70%{background-image: url(image/slide3.jpg);}
+  100%{background-image: url(image/slide4.jpg);}
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .carousel-caption{
+    padding-bottom: 350px;
+  }
+  .carousel-caption h2{
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 767px){
+  .navbar-inverse .navbar-brand{
+    margin-top: 20px;
+    font-size: 30px;
+
+    padding: 20px 15px;
+  }
+  .navbar-collapse{
+    background: transparent;
+
+
+
+  }
+
+}
+
+
+.banner{
+  background-image: url(image/mb1.png);
+
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+
+}
+.banner1{
+
+  background-image: url(image/fricui.png);
+
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+.banner2{
+
+  background-image: url(image/mb1.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+.carousel-caption{
+  padding-bottom: 250px;
+  font-family: poppins;
+}
+.carousel-caption h2{
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.carousel-caption h2 span{
+  color: rgba(92,95,236,0.8);
+}
+.carousel-caption a {
+  background: rgba(92,95,236,0.8);
+  padding: 15px 35px;
+  display: inline-block;
+  margin-top: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+.carousel-caption a:hover{
+  text-decoration: none;
+}
+.carousel-control.right{
+  background-image: none;
+}
+.carousel-control.left{
+  background-image: none;
+}
+.carousel-indicators .active{
+  background-color: rgba(92,95,236,0.7);
+  border-color: rgba(92,95,236,0.7);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .carousel-caption{
+    padding-bottom: 350px;
+  }
+  .carousel-caption h2{
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 767px){
+  .navbar-inverse .navbar-brand{
+    font-size: 30px;
+    padding: 20px 15px;
+  }
+  .navbar-collapse{
+    background: rgba(0,0,0,0.5);
+  }
+  .carousel-caption{
+    padding-bottom: 120px;
+  }
+  .carousel-caption h2{
+    font-size: 25px;
+  }
+  .carousel-caption h3{
+    font-size: 25px;
+  }
+  .carousel-caption a{
+    padding: 10px 25px;
+  }
+
+}
+.swiper-slider{
+  width: 250px !important;
+}
+.slider-box{
+  box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
+  height: 350px;
+  width: 285px;
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: rgba(187,187,187,0.40);
+}
+.slider-box a{
+  text-decoration: none;
+  text-align: center;
+}
+.slider-box a:hover{
+  cursor: pointer;
+}
+.slider-box .time{
+  cursor: pointer;
+}
+.img-box{
+  width: 90%;
+  height: 170px;
+}
+.img-box img{
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.time{
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  color: #000000;
+}
+.detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 35px;
+}
+.price{
+  color: #FFFFFF;
+  background-color:  rgba(92,95,236,0.7);
+  line-height: 20px;
+}
+.cart{
+  position: absolute;
+  bottom: 0px;
+  height: 45px;
+  background-color:  rgba(92,95,236,0.7);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart a{
+  color: #FFFFFF;
+
+}
+.slider-box:hover{
+  box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
+}
+.slider-box:hover .img-box img{
+  transform: scale(1.07);
+  transition: all ease 0.3s;
+}
+.cart:hover{
+  transform: scale(1.0);
+  background-color:  rgba(92,95,236,0.7);
+  box-shadow: 2px 2px 12px  rgba(92,95,236,0.7);
+  transition: all ease 0.1s;
+}
+.top{
+
+  width: 100%;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+
+}
+.top .page{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.col{
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
